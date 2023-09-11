@@ -10,8 +10,8 @@ g = -9.81
 dt = 0.3
 
 m = 100
-F = 900
-Angle = 45
+F = 1300
+Angle = 30
 Angle2 = 60
 
 X0 = 000
@@ -102,13 +102,13 @@ function love.draw()
 
   -- Bullet
   love.graphics.setColor(1, 1, 0)
-  love.graphics.circle("fill", X2*0.01, Y2*0.01 + 600, 5, 5)
+  love.graphics.circle("fill", X2*0.02, Y2*0.02 + 600, 5, 5)
 
   love.graphics.setColor(0, 1, 1)
   for _, value in ipairs(trace2) do 
     xt = value[1]
     yt = value[2]
-    love.graphics.circle("fill", xt*0.01, yt*0.01 + 600, 1, 20)
+    love.graphics.circle("fill", xt*0.02, yt*0.02 + 600, 1, 20)
   end
 
    
